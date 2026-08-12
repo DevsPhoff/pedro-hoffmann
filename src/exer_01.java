@@ -32,6 +32,8 @@ public class exer_01 {
         System.out.println("Nome: "+nome);
         System.out.println("Salário mensal: R$" + df.format(sal_final));
 
+        //ok
+
 
         sc.close();
     }
