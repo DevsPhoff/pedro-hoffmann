@@ -8,11 +8,15 @@ public class ex03 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Informe o número do seu parâmetro");
-        int parametro = sc.nextInt();
+        System.out.println("Digite um número");
+        int numero = sc.nextInt();
 
-        for (int i = 0; int i <= 20; i++) {
-            System.out.println(i + parametro);
+        imprimir20Numeros(numero);
+    }
+
+    public static void imprimir20Numeros(int num)  {
+        for (int i = num; i <= num + 20; i++) {
+            System.out.println(i);
         }
 
 
