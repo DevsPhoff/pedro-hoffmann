@@ -18,10 +18,5 @@ public class ex03 {
         for (int i = num; i <= num + 20; i++) {
             System.out.println(i);
         }
-
-
-
-
-
     }
 }
