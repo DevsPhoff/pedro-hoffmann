@@ -18,7 +18,7 @@ public class Floricultura {
     public List<Flor> pesquisarFlores(String nomeCliente) {
         List<Flor> floresPesquisa = new ArrayList<Flor>();
         for (Flor f : flores) {
-            // Acessa o atributo encapsulado do objeto 'f' usando o método getter
+            // Acessa o atributo encapsulado do objeto 'f' usando o metodo getter
             if (f.getNomeCliente().equals(nomeCliente)) {
                 floresPesquisa.add(f);
             }

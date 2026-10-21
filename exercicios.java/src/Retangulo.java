@@ -6,7 +6,6 @@ public class Retangulo {
     //O Retangulo com a maior área
     //O Retangulo com o maior perímetro
 
-    public Retangulo
 
 
 }

@@ -5,11 +5,6 @@ public class Flor {
     private double preco;
     private String nomeCliente;
 
-    /**
-     * CONSTRUTOR: Método especial para instanciar (criar) o objeto na memória. Ele
-     * inicializa o objeto chamando os métodos modificadores (setters) para garantir
-     * que as validações sejam executadas desde o nascimento do objeto.
-     */
     public Flor(String nome, double preco, String nomeCliente) {
         setNome(nome);
         setPreco(preco);
