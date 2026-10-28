@@ -3,30 +3,34 @@ public class Produto {
     String marca;
     String modelo;
     double preco;
-    int quantidadeEmEstoque;
+    int quantidadeEstoque;
 
-    // Construtor que cria o produto
-    public Produto(String marca, String modelo, double preco, int quantidadeEmEstoque) {
+    public Produto(String marca, String modelo, double preco, int quantidadeEstoque) {
         this.marca = marca;
         this.modelo = modelo;
         this.preco = preco;
-        this.quantidadeEmEstoque = quantidadeEmEstoque;
+        this.quantidadeEstoque = quantidadeEstoque;
     }
 
-    // Aqui adiciona unidades no estoque
-    public void adicionarEstoque(int qtd) {
-        this.quantidadeEmEstoque += qtd;
+    public void adicionarEstoque(int quantidade) {
+        quantidadeEstoque += quantidade;
     }
 
-    // Aqui vende o produto (verifica se há estoque suficiente)
-    public boolean vender(int qtd) {
-
-        if (qtd <= this.quantidadeEmEstoque) {
-            this.quantidadeEmEstoque -= qtd;
-            return true; // significa que deu certo a venda
+    public void venderProduto(int quantidade) {
+        if (quantidade <= quantidadeEstoque) {
+            quantidadeEstoque -= quantidade;
+        } else {
+            System.out.println("Quantidade insuficiente em estoque.");
         }
-
-        return false; // caso o estoque esteja insuficiente
     }
-}
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", preco=" + preco +
+                ", quantidadeEstoque=" + quantidadeEstoque +
+                '}';
+    }
 }
